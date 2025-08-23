@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Assistant</title>
+    <link rel="icon" href="../static/ai.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+<body>
+<div class="app-container">
+  <div class="chatbot chatbot--open">
+    <div class="chatbot__header">
+      <div class="header-content">
+        <img src="static/ai.jpg" alt="AI Logo">
+        <p><strong>AI Knowledge Assistant</strong> <span class="u-text-highlight">Ask me anything about the documents</span></p>
+      </div>
+      <div class="header-controls">
+        <button class="minimize-btn"><i class="fas fa-minus"></i></button>
+        <button class="expand-btn"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+    
+    <div class="chatbot__message-window">
+      <div class="welcome-message">
+        <h2>Welcome to AI Knowledge Assistant</h2>
+        <p>I can answer questions based on the documents in my knowledge base. Ask me anything!</p>
+      </div>
+      <ul class="chatbot__messages">
+        <!-- Messages will be appended here -->
+      </ul>
+    </div>
+    
+    <div class="chatbot__entry">
+      <input type="text" class="chatbot__input" placeholder="Ask me a question..." />
+      <button class="chatbot__submit"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<div class="sources-panel">
+  <div class="sources-header">
+    <h3>Reference Sources</h3>
+    <button class="close-sources"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="sources-content">
+    <p class="no-sources">No sources to display yet. Ask a question to see relevant sources.</p>
+    <ul class="sources-list">
+      <!-- Sources will be added here -->
+    </ul>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
+<script src="static/script.js"></script>
+</body>
+</html>
