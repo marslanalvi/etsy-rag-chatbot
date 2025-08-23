@@ -2,4 +2,6 @@ flask
 chromadb
 openai
 python-dotenv
+
 PyPDF2
+python-docx
